@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="12dp"/>
+    <TextView
+        android:id="@+id/ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dd"
+        app:layout_constraintStart_toStartOf="@id/dd"
+        app:layout_constraintEnd_toEndOf="@id/dd"
+        android:layout_margin="44dp"/>
+
+    <Button
+        android:id="@+id/edit"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/dd"
+        app:layout_constraintBottom_toBottomOf="@id/dd"
+        android:text="edit"
+        app:layout_constraintStart_toStartOf="@id/dd"
+        android:layout_margin="66dp"
+
+     />
+
+    <Button
+        android:id="@+id/delet"
+        android:text="delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/ff"
+        app:layout_constraintBottom_toBottomOf="@id/ff"
+        app:layout_constraintStart_toStartOf="@id/ff"
+        android:layout_margin="66dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
